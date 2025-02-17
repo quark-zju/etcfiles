@@ -8,6 +8,12 @@ Also tracks the package list.
 
 Backup the system state. Equivalent to `backup.py --etc --pkglist`.
 
+Depends on `pyalpm`, to install:
+
+```bash
+sudo pacman -S pyalpm git tar
+```
+
 ### `backup.py --etc`
 
 Copy files in `/etc` to `./etc`.
@@ -30,6 +36,5 @@ When choosing between NixOS and Arch for my laptop, I found NixOS too complex. H
 
 The system state is primarily determined by (1) name and version of installed packages, and (2) modifications to the system config files.
 
-For (1), listing packages is straightforward. Technically, [Arch Linux Archive](https://wiki.archlinux.org/title/Arch_Linux_Archive) can be used to restore to the exact state like NixOS. Practically, people probably just want the latest version of everything.
-
-For (2), directly version controlling `/etc` is not a bad idea. It's simple and effective. I do that for server-side `/etc/nginx`. However, `/etc` has thousands of files, most maintained by packages, figuring out what files to track manually could be error prone. Therefore, I wrote some scripts to automate the manual work.
+- For (1), listing packages is straightforward. Technically, [Arch Linux Archive](https://wiki.archlinux.org/title/Arch_Linux_Archive) can be used to restore to the exact state like NixOS. Practically, people probably just want the latest version of everything.
+- For (2), version controlling `/etc` is not a bad idea. Tracking every file in `/etc` is too verbose and fragile to package upgrades. `backup.py` helps identify those manually edited files.
