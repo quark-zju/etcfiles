@@ -259,6 +259,13 @@ def backup_pkglist():
         for pkg in installed_pkgs:
             f.write(f"{pkg.name} {pkg.version}\n")
 
+    print("Writing pkglist/minimal")
+    with open("pkglist/minimal", "w", newline="\n") as f:
+        for pkg in installed_pkgs:
+            if pkg.compute_requiredby():
+                continue
+            f.write(f"{pkg.name} {pkg.version}\n")
+
     print("Writing pkglist/grouped")
     with open("pkglist/grouped", "w", newline="\n") as f:
         for group, pkgs in group_packages(installed_pkgs):
@@ -286,4 +293,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

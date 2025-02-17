@@ -28,6 +28,7 @@ For a modified file, this script will try to write a `.diff` file that contains 
 Backup the list of manually installed packages to `pkglist`.
 
 - `pkglist/installed`: Explicitly installed packages. Similar to `pacman -Qe` output.
+- `pkglist/minimal`: `installed` excluding packages required by other installed packages.
 - `pkglist/grouped`: Organize packages by groups. Packages without a group will be assigned to either `[aur]`, or `[ungrouped]`.
 
 ## Background
