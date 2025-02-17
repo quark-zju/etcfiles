@@ -16,6 +16,7 @@ __pycache__/
 /etc/locale.conf
 /etc/localtime
 /etc/machine-id
+/etc/mkinitcpio.d/linux.preset
 /etc/os-release
 /etc/pacman.d/gnupg/
 /etc/pacman.d/mirrorlist
