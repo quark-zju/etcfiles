@@ -1,0 +1,31 @@
+--- filesystem-2024.11.21-1/etc/passwd
++++ current/etc/passwd
+@@ -1 +1,28 @@
+ root:x:0:0::/root:/usr/bin/bash
++bin:x:1:1::/:/usr/bin/nologin
++daemon:x:2:2::/:/usr/bin/nologin
++mail:x:8:12::/var/spool/mail:/usr/bin/nologin
++ftp:x:14:11::/srv/ftp:/usr/bin/nologin
++http:x:33:33::/srv/http:/usr/bin/nologin
++nobody:x:65534:65534:Kernel Overflow User:/:/usr/bin/nologin
++dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
++systemd-coredump:x:980:980:systemd Core Dumper:/:/usr/bin/nologin
++systemd-network:x:979:979:systemd Network Management:/:/usr/bin/nologin
++systemd-oom:x:978:978:systemd Userspace OOM Killer:/:/usr/bin/nologin
++systemd-journal-remote:x:977:977:systemd Journal Remote:/:/usr/bin/nologin
++systemd-resolve:x:976:976:systemd Resolver:/:/usr/bin/nologin
++systemd-timesync:x:975:975:systemd Time Synchronization:/:/usr/bin/nologin
++tss:x:974:974:tss user for tpm2:/:/usr/bin/nologin
++uuidd:x:68:68:uuid daemon:/:/usr/bin/nologin
++alpm:x:973:973:Arch Linux Package Management:/:/usr/bin/nologin
++git:x:972:972:git daemon user:/:/usr/bin/git-shell
++quark:x:1000:1000:Jun:/home/quark:/bin/zsh
++avahi:x:970:970:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
++polkitd:x:102:102:User for polkitd:/:/usr/bin/nologin
++rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
++colord:x:969:969:Color management daemon:/var/lib/colord:/usr/bin/nologin
++ollama:x:968:968:ollama user:/var/lib/ollama:/usr/bin/nologin
++_talkd:x:967:967:User for legacy talkd server:/:/usr/bin/nologin
++saned:x:966:966:SANE daemon user:/:/usr/bin/nologin
++fwupd:x:965:965:Firmware update daemon:/var/lib/fwupd:/usr/bin/nologin
++passim:x:964:964:Local Caching Server:/usr/share/empty:/usr/bin/nologin
