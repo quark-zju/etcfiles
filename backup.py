@@ -169,8 +169,11 @@ def copy_path_to_local(path: str, message: str = ""):
     rel_path = path.lstrip("/")
     os.makedirs(os.path.dirname(rel_path), exist_ok=True)
     print(f"Copying {message} {path}")
-    shutil.copyfile(path, rel_path, follow_symlinks=False)
-    shutil.copymode(path, rel_path, follow_symlinks=False)
+    try:
+        shutil.copyfile(path, rel_path, follow_symlinks=False)
+        shutil.copymode(path, rel_path, follow_symlinks=False)
+    except IOError as ex:
+        print(f" Failed: {ex}")
 
 
 def get_file_content_from_package(
