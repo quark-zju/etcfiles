@@ -58,8 +58,8 @@ pkgtop 2.5.1-2
 plasma-desktop 6.3.0-1
 plasma-workspace-wallpapers 6.3.0-1
 powertop 2.15-2
-pulseaudio 17.0+r43+g3e2bb8a1e-1
 pulseaudio-alsa 1:1.2.12-4
+pulseaudio-bluetooth 17.0+r43+g3e2bb8a1e-1
 pyalpm 0.10.10-2
 pyright 1.1.394-1
 python-pytorch-opt-rocm 2.6.0-3
