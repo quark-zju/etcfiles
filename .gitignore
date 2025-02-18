@@ -9,6 +9,7 @@ __pycache__/
 /etc/adjtime
 /etc/ca-certificates/extracted/
 /etc/crypttab
+/etc/dconf/db/ibus
 /etc/fonts/conf.d
 /etc/fstab
 /etc/gshadow
@@ -23,6 +24,7 @@ __pycache__/
 /etc/resolv.conf
 /etc/shadow
 /etc/shells
+/etc/ssh/*.pub
 /etc/ssl/certs/
 /etc/subgid
 /etc/subuid
