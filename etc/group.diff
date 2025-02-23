@@ -1,6 +1,6 @@
 --- filesystem-2024.11.21-1/etc/group
 +++ current/etc/group
-@@ -1 +1,60 @@
+@@ -1 +1,61 @@
  root:x:0:root
 +sys:x:3:bin
 +mem:x:8:
@@ -61,3 +61,4 @@
 +saned:x:966:
 +fwupd:x:965:
 +passim:x:964:
++docker:x:963:quark

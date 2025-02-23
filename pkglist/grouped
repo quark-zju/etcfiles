@@ -5,19 +5,23 @@
   base 3-2
   base-devel 1-2
   bluez-utils 5.79-1
+  cargo-expand 1.0.100-1
   ccache 4.10.2-3
+  docker 1:27.5.1-1
+  docker-buildx 0.21.1-1
   dosfstools 4.2-5
   efibootmgr 18-3
   firefox 135.0-1
   fwupd 2.0.6-1
   git 2.48.1-1
-  hip-runtime-amd 6.2.4-1
   htop 3.3.0-3
-  ibus-libpinyin 1.15.8-1
+  ibus-rime 1.5.0-2
   inetutils 2.5-1
+  intellij-idea-community-edition 4:2024.3.3-1
   ipython 8.32.0-1
   iwd 3.4-1
   jack2 1.9.22-1
+  kotlin 2.1.10-1
   less 1:668-1
   linux 6.13.2.arch1-1
   linux-firmware 20250109.7673dffd-1
@@ -42,14 +46,19 @@
   pulseaudio-bluetooth 17.0+r43+g3e2bb8a1e-1
   pyalpm 0.10.10-2
   pyright 1.1.394-1
-  python-pytorch-opt-rocm 2.6.0-3
+  python-poetry 2.1.1-1
   python-virtualenv 20.28.0-1
+  rime-double-pinyin 0.0.0.20190120-2
+  ruby 3.3.7-1
+  ruby-pry 0.14.2-4
   rust-analyzer 20250210-1
   rustup 1.27.1-1
+  sshguard 2.4.3-2
   sudo 1.9.16.p2-2
   tcl 8.6.16-1
   tk 8.6.16-1
   tuned-ppd 2.25.1-1
+  unzip 6.0-22
   vim 9.1.1065-1
   vlc 3.0.21-12
   volumeicon 0.5.1-7

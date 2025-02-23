@@ -58,3 +58,4 @@ _talkd:x:967:
 saned:x:966:
 fwupd:x:965:
 passim:x:964:
+docker:x:963:quark
