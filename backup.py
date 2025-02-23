@@ -176,31 +176,35 @@ def copy_path_to_local(path: str, message: str = ""):
         print(f" Failed: {ex}")
 
 
-def get_file_content_from_package(
-    local_pkg: pyalpm.Package, path: str
-) -> Optional[bytes]:
-    for db in get_sync_dbs():
-        pkg = db.get_pkg(local_pkg.name)
-        if pkg is None or pkg.version != local_pkg.version or not pkg.filename:
-            continue
-        for cache_dir in get_handle().cachedirs:
-            tar_path = os.path.join(cache_dir, pkg.filename)
-            if os.path.isfile(tar_path):
-                return extract_tarball_single_path(tar_path, path)
-    return None
+def get_file_content_from_package(local_pkg: pyalpm.Package, path: str) -> bytes:
+    pkg_filename = f"{local_pkg.name}-{local_pkg.version}-{local_pkg.arch}.pkg.tar.zst"
+    cache_dirs = get_handle().cachedirs
+    for cache_dir in cache_dirs:
+        tar_path = os.path.join(cache_dir, pkg_filename)
+        if os.path.isfile(tar_path):
+            return extract_tarball_single_path(tar_path, path)
+    raise RuntimeError(
+        f" Package {pkg_filename} is not found in {', or '.join(cache_dirs)}."
+    )
 
 
 def maybe_write_diff(local_pkg: pyalpm.Package, path: str):
     assert os.path.isabs(path)
     with open(path, "rb") as f:
         current_content = f.read()
-    past_content = get_file_content_from_package(local_pkg, path)
-    if past_content is None:
+    try:
+        past_content = get_file_content_from_package(local_pkg, path)
+    except RuntimeError as ex:
+        print(
+            f" Cannot read original {path} from package {local_pkg.name}. Skip generating diff."
+        )
+        print(f"  {ex}")
         return
     try:
         current_text = current_content.decode()
         past_text = past_content.decode()
     except UnicodeDecodeError:
+        print(f" Config file {path} is not UTF-8. Skip generating diff.")
         return
     diff_text = "".join(
         difflib.unified_diff(
