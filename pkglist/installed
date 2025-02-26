@@ -31,7 +31,6 @@ gwenview 24.12.2-1
 htop 3.3.0-3
 ibus-rime 1.5.0-2
 inetutils 2.5-1
-intellij-idea-community-edition 4:2024.3.3-1
 ipython 8.32.0-1
 iwd 3.4-1
 jack2 1.9.22-1
@@ -46,7 +45,6 @@ koko 24.12.2-1
 kolourpaint 24.12.2-1
 kompare 24.12.2-1
 konsole 24.12.2-1
-kotlin 2.1.10-1
 kscreen 6.3.0-1
 kwallet-pam 6.3.0-1
 kwalletmanager 24.12.2-1
