@@ -1,4 +1,4 @@
---- openssh-9.9p1-2/etc/ssh/sshd_config
+--- openssh-9.9p2-1/etc/ssh/sshd_config
 +++ current/etc/ssh/sshd_config
 @@ -1,117 +1,117 @@
  # Include drop-in configurations

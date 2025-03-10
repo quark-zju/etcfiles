@@ -1,6 +1,6 @@
 --- filesystem-2024.11.21-1/etc/group
 +++ current/etc/group
-@@ -1 +1,61 @@
+@@ -1 +1,62 @@
  root:x:0:root
 +sys:x:3:bin
 +mem:x:8:
@@ -23,7 +23,7 @@
 +disk:x:995:
 +input:x:994:quark
 +kmem:x:993:
-+kvm:x:992:
++kvm:x:992:quark
 +lp:x:991:
 +optical:x:990:
 +render:x:989:
@@ -62,3 +62,4 @@
 +fwupd:x:965:
 +passim:x:964:
 +docker:x:963:quark
++adbusers:x:962:

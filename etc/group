@@ -20,7 +20,7 @@ audio:x:996:quark
 disk:x:995:
 input:x:994:quark
 kmem:x:993:
-kvm:x:992:
+kvm:x:992:quark
 lp:x:991:
 optical:x:990:
 render:x:989:
@@ -59,3 +59,4 @@ saned:x:966:
 fwupd:x:965:
 passim:x:964:
 docker:x:963:quark
+adbusers:x:962:

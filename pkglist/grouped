@@ -1,41 +1,44 @@
 [ungrouped]
   alsa-utils 1.2.13-2
-  amd-ucode 20250109.7673dffd-1
+  amd-ucode 20250210.5bc5868b-1
+  android-tools 35.0.2-11
   arandr 0.1.11-4
   base 3-2
   base-devel 1-2
   bluez-utils 5.79-1
-  cargo-expand 1.0.100-1
-  ccache 4.10.2-3
-  docker 1:27.5.1-1
-  docker-buildx 0.21.1-1
+  cargo-expand 1.0.101-1
+  ccache 4.10.2-4
+  docker 1:28.0.1-1
+  docker-buildx 0.21.2-1
   dosfstools 4.2-5
   efibootmgr 18-3
-  firefox 135.0-1
+  firefox 136.0-1
   fwupd 2.0.6-1
-  git 2.48.1-1
-  htop 3.3.0-3
+  git 2.48.1-2
+  htop 3.4.0-1
   ibus-rime 1.5.0-2
   inetutils 2.5-1
-  ipython 8.32.0-1
+  inkscape 1.4-7
+  ipython 9.0.2-1
   iwd 3.4-1
   jack2 1.9.22-1
   less 1:668-1
-  linux 6.13.2.arch1-1
-  linux-firmware 20250109.7673dffd-1
+  linux 6.13.6.arch1-1
+  linux-firmware 20250210.5bc5868b-1
   man-db 2.13.0-1
+  mitmproxy 11.1.0-1
   mypy 1.14.0-1
   ncdu 2.7-1
   neovim 0.10.4-2
   net-tools 2.10-3
   network-manager-applet 1.36.0-1
-  networkmanager 1.50.2-1
+  networkmanager 1.52.0-1
   nm-connection-editor 1.36.0-1
   noto-fonts-cjk 20240730-1
-  npm 11.1.0-2
-  obsidian 1.8.4-2
-  ollama 0.5.11-1
-  openssh 9.9p1-2
+  npm 11.2.0-1
+  ollama 0.5.13-1
+  openssh 9.9p2-1
+  optipng 0.7.8-1
   pacutils 0.14.0-3
   pavucontrol 1:6.1-1
   powertop 2.15-2
@@ -43,46 +46,50 @@
   pulseaudio-alsa 1:1.2.12-4
   pulseaudio-bluetooth 17.0+r43+g3e2bb8a1e-1
   pyalpm 0.10.10-2
-  pyright 1.1.394-1
+  pyright 1.1.396-1
   python-poetry 2.1.1-1
   python-virtualenv 20.28.0-1
   rime-double-pinyin 0.0.0.20190120-2
-  ruby 3.3.7-1
+  ruby 3.3.7-2
   ruby-pry 0.14.2-4
-  rust-analyzer 20250210-1
-  rustup 1.27.1-1
+  rust-analyzer 20250310-1
+  rustup 1.28.1-1
   sshguard 2.4.3-2
   sudo 1.9.16.p2-2
   tcl 8.6.16-1
   tk 8.6.16-1
   tuned-ppd 2.25.1-1
   unzip 6.0-22
-  vim 9.1.1065-1
-  vlc 3.0.21-12
+  usbutils 018-1
+  vim 9.1.1165-1
+  vlc 3.0.21-14
   volumeicon 0.5.1-7
   vulkan-radeon 1:24.3.4-1
   wireless_tools 30.pre9-4
   xclip 0.13-6
-  zed 0.173.9-1
+  yt-dlp 2025.02.19-1
+  zed 0.176.3-1
   zsh 5.9-5
 [kde-applications]
-  ark 24.12.2-1
-  dolphin 24.12.2-1
-  dolphin-plugins 24.12.2-1
-  dragon 24.12.2-1
-  filelight 24.12.2-1
-  gwenview 24.12.2-1
-  juk 24.12.2-1
-  kamoso 24.12.2-1
-  kate 24.12.2-1
-  kmix 24.12.2-1
-  koko 24.12.2-1
-  kolourpaint 24.12.2-1
-  kompare 24.12.2-1
-  konsole 24.12.2-1
-  kwalletmanager 24.12.2-1
-  okular 24.12.2-1
-  yakuake 24.12.2-1
+  ark 24.12.3-1
+  dolphin 24.12.3-1
+  dolphin-plugins 24.12.3-1
+  dragon 24.12.3-1
+  ffmpegthumbs 24.12.3-1
+  filelight 24.12.3-1
+  gwenview 24.12.3-1
+  juk 24.12.3-1
+  kamera 24.12.3-1
+  kate 24.12.3-1
+  kdeconnect 24.12.3-1
+  kmix 24.12.3-1
+  koko 24.12.3-1
+  kolourpaint 24.12.3-1
+  kompare 24.12.3-1
+  konsole 24.12.3-1
+  kwalletmanager 24.12.3-1
+  okular 24.12.3-1
+  yakuake 24.12.3-1
 [xfce4]
   exo 4.20.0-2
   garcon 4.20.0-2
@@ -96,63 +103,68 @@
   xfce4-settings 4.20.1-1
   xfce4-terminal 1.1.4-1
   xfconf 4.20.0-2
-  xfdesktop 4.20.0-7
+  xfdesktop 4.20.1-1
   xfwm4 4.20.0-2
   xfwm4-themes 4.10.0-6
 [plasma]
-  bluedevil 1:6.3.0-1
-  breeze-gtk 6.3.0-1
-  breeze-plymouth 6.3.0-1
-  kde-gtk-config 6.3.0-1
-  kdeplasma-addons 6.3.0-1
-  kinfocenter 6.3.0-1
-  kscreen 6.3.0-1
-  kwallet-pam 6.3.0-1
-  plasma-desktop 6.3.0-1
-  plasma-workspace-wallpapers 6.3.0-1
-  spectacle 1:6.3.0-1
+  bluedevil 1:6.3.2-1
+  breeze-gtk 6.3.2-1
+  breeze-plymouth 6.3.2-1
+  kde-gtk-config 6.3.2-1
+  kdeplasma-addons 6.3.2-1
+  kinfocenter 6.3.2-2
+  kscreen 6.3.2-1
+  kwallet-pam 6.3.2-1
+  plasma-browser-integration 6.3.2-1
+  plasma-desktop 6.3.2-1
+  plasma-workspace-wallpapers 6.3.2-1
+  spectacle 1:6.3.2.1-1
 [aur]
   android-studio 2024.2.2.13-1
   autojump 22.5.3-9
   google-chrome 133.0.6943.98-1
+  ocrmypdf 16.10.0-1
   pkgtop 2.5.1-2
   visual-studio-code-bin 1.97.2-1
   yay 12.4.2-1
   yay-debug 12.4.2-1
 [kde-utilities]
-  ark 24.12.2-1
-  filelight 24.12.2-1
-  kate 24.12.2-1
-  konsole 24.12.2-1
-  kwalletmanager 24.12.2-1
-  yakuake 24.12.2-1
+  ark 24.12.3-1
+  filelight 24.12.3-1
+  kate 24.12.3-1
+  konsole 24.12.3-1
+  kwalletmanager 24.12.3-1
+  yakuake 24.12.3-1
 [kde-graphics]
-  gwenview 24.12.2-1
-  koko 24.12.2-1
-  kolourpaint 24.12.2-1
-  okular 24.12.2-1
+  gwenview 24.12.3-1
+  kamera 24.12.3-1
+  koko 24.12.3-1
+  kolourpaint 24.12.3-1
+  okular 24.12.3-1
 [kde-multimedia]
-  dragon 24.12.2-1
-  juk 24.12.2-1
-  kamoso 24.12.2-1
-  kmix 24.12.2-1
+  dragon 24.12.3-1
+  ffmpegthumbs 24.12.3-1
+  juk 24.12.3-1
+  kmix 24.12.3-1
 [xfce4-goodies]
   xfce4-pulseaudio-plugin 0.4.9-2
   xfce4-screensaver 4.18.4-2
   xfce4-screenshooter 1.11.1-3
 [kde-sdk]
-  dolphin-plugins 24.12.2-1
-  kompare 24.12.2-1
+  dolphin-plugins 24.12.3-1
+  kompare 24.12.3-1
 [linux-tools]
   turbostat 6.13-1
   x86_energy_perf_policy 6.13-1
 [gnome]
   gvfs-smb 1.56.1-3
+[kde-network]
+  kdeconnect 24.12.3-1
 [kde-system]
-  dolphin 24.12.2-1
+  dolphin 24.12.3-1
 [nerd-fonts]
   ttf-jetbrains-mono-nerd 3.3.0-1
 [xorg]
-  xorg-server 21.1.15-1
+  xorg-server 21.1.16-1
 [xorg-drivers]
   xf86-video-amdgpu 23.0.0-2

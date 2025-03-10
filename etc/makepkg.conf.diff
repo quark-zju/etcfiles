@@ -1,4 +1,4 @@
---- pacman-7.0.0.r6.gc685ae6-1/etc/makepkg.conf
+--- pacman-7.0.0.r6.gc685ae6-2/etc/makepkg.conf
 +++ current/etc/makepkg.conf
 @@ -1,165 +1,165 @@
  #!/hint/bash
