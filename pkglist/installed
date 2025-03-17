@@ -3,6 +3,7 @@ amd-ucode 20250210.5bc5868b-1
 android-studio 2024.2.2.13-1
 android-tools 35.0.2-11
 arandr 0.1.11-4
+arch-audit 0.2.0-2
 ark 24.12.3-1
 autojump 22.5.3-9
 base 3-2
@@ -53,6 +54,7 @@ kscreen 6.3.2-1
 kwallet-pam 6.3.2-1
 kwalletmanager 24.12.3-1
 less 1:668-1
+lftp 4.9.3-1
 linux 6.13.6.arch1-1
 linux-firmware 20250210.5bc5868b-1
 man-db 2.13.0-1
@@ -86,6 +88,7 @@ pyright 1.1.396-1
 python-poetry 2.1.1-1
 python-virtualenv 20.28.0-1
 rime-double-pinyin 0.0.0.20190120-2
+rsync 3.4.1-2
 ruby 3.3.7-2
 ruby-pry 0.14.2-4
 rust-analyzer 20250310-1
