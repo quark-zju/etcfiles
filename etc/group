@@ -60,3 +60,4 @@ fwupd:x:965:
 passim:x:964:
 docker:x:963:quark
 adbusers:x:962:
+flatpak:x:961:

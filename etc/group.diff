@@ -1,6 +1,6 @@
 --- filesystem-2024.11.21-1/etc/group
 +++ current/etc/group
-@@ -1 +1,62 @@
+@@ -1 +1,63 @@
  root:x:0:root
 +sys:x:3:bin
 +mem:x:8:
@@ -63,3 +63,4 @@
 +passim:x:964:
 +docker:x:963:quark
 +adbusers:x:962:
++flatpak:x:961:

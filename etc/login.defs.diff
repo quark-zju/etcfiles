@@ -1,4 +1,4 @@
---- shadow-4.17.3-1/etc/login.defs
+--- shadow-4.17.4-1/etc/login.defs
 +++ current/etc/login.defs
 @@ -1,256 +1,256 @@
  #

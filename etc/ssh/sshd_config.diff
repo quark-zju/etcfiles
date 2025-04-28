@@ -1,6 +1,6 @@
---- openssh-9.9p2-1/etc/ssh/sshd_config
+--- openssh-10.0p1-3/etc/ssh/sshd_config
 +++ current/etc/ssh/sshd_config
-@@ -1,117 +1,117 @@
+@@ -1,119 +1,117 @@
  # Include drop-in configurations
  Include /etc/ssh/sshd_config.d/*.conf
  
@@ -59,11 +59,15 @@
  # Don't read the user's ~/.rhosts and ~/.shosts files
  #IgnoreRhosts yes
  
- # To disable tunneled clear text passwords, change to no here!
+-# To disable tunneled clear text passwords, change to "no" here!
++# To disable tunneled clear text passwords, change to no here!
  #PasswordAuthentication yes
  #PermitEmptyPasswords no
  
- # Change to no to disable s/key passwords
+-# Change to "no" to disable keyboard-interactive authentication.  Depending on
+-# the system's configuration, this may involve passwords, challenge-response,
+-# one-time passwords or some combination of these and other methods.
++# Change to no to disable s/key passwords
  #KbdInteractiveAuthentication yes
  
  # Kerberos options
