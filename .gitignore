@@ -8,6 +8,7 @@ __pycache__/
 /etc/.*
 /etc/adjtime
 /etc/ca-certificates/extracted/
+/etc/ca-certificates/trust-source/anchors/mkcert*
 /etc/crypttab
 /etc/dconf/db/ibus
 /etc/fonts/conf.d
