@@ -148,6 +148,22 @@
   kwalletmanager 25.08.1-1
   okular 25.08.1-1
   yakuake 25.08.1-1
+[plasma]
+  bluedevil 1:6.4.5-1
+  breeze-gtk 6.4.5-1
+  breeze-plymouth 6.4.5-1
+  discover 6.4.5-1
+  kde-gtk-config 6.4.5-1
+  kdeplasma-addons 6.4.5-1
+  kinfocenter 6.4.5-1
+  kscreen 6.4.5-1
+  kwallet-pam 6.4.5-1
+  kwin-x11 6.4.5-1
+  plasma-browser-integration 6.4.5-1
+  plasma-desktop 6.4.5-1
+  plasma-pa 6.4.5-1
+  plasma-workspace-wallpapers 6.4.5-1
+  spectacle 1:6.4.5-1
 [xfce4]
   exo 4.20.0-2
   garcon 4.20.0-2
@@ -164,21 +180,6 @@
   xfdesktop 4.20.1-1
   xfwm4 4.20.0-2
   xfwm4-themes 4.10.0-6
-[plasma]
-  bluedevil 1:6.4.5-1
-  breeze-gtk 6.4.5-1
-  breeze-plymouth 6.4.5-1
-  discover 6.4.5-1
-  kde-gtk-config 6.4.5-1
-  kdeplasma-addons 6.4.5-1
-  kinfocenter 6.4.5-1
-  kscreen 6.4.5-1
-  kwallet-pam 6.4.5-1
-  plasma-browser-integration 6.4.5-1
-  plasma-desktop 6.4.5-1
-  plasma-pa 6.4.5-1
-  plasma-workspace-wallpapers 6.4.5-1
-  spectacle 1:6.4.5-1
 [aur]
   android-studio 2025.1.1.14-1
   autojump 22.5.3-11
