@@ -1,6 +1,6 @@
 --- pambase-20250719-1/etc/pam.d/system-login
 +++ current/etc/pam.d/system-login
-@@ -1,21 +1,21 @@
+@@ -1,21 +1,22 @@
  #%PAM-1.0
  
  auth       required   pam_shells.so
@@ -17,7 +17,7 @@
  session    optional   pam_loginuid.so
  session    optional   pam_keyinit.so       force revoke
  session    include    system-auth
--session    optional   pam_lastlog2.so      silent
+ session    optional   pam_lastlog2.so      silent
  session    optional   pam_motd.so
  session    optional   pam_mail.so          dir=/var/spool/mail standard quiet
  session    optional   pam_umask.so
