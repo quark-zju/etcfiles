@@ -38,7 +38,7 @@ gimp 3.0.4-4
 git 2.51.0-1
 gnome-keyring 1:48.0-1
 gnumeric 1.12.59-3
-google-chrome 140.0.7339.127-1
+google-chrome 140.0.7339.185-1
 gvfs-smb 1.57.2-4
 gwenview 25.08.1-1
 htop 3.4.1-1
@@ -80,7 +80,6 @@ net-tools 2.10-3
 network-manager-applet 1.36.0-1
 networkmanager 1.54.0-1
 nm-connection-editor 1.36.0-1
-noto-fonts-cjk 20240730-1
 npm 11.6.0-1
 ocrmypdf 16.10.4-1
 okular 25.08.1-1
@@ -127,6 +126,7 @@ thunar-media-tags-plugin 0.6.0-1
 thunar-volman 4.20.0-2
 tk 8.6.16-1
 ttf-jetbrains-mono-nerd 3.4.0-1
+ttf-ms-win11-auto-zh_cn 10.0.26100.1742-4
 tumbler 4.20.0-3
 tuned-ppd 2.26.0-1
 turbostat 6.16-1

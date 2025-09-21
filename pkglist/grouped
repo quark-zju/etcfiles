@@ -45,7 +45,6 @@
   network-manager-applet 1.36.0-1
   networkmanager 1.54.0-1
   nm-connection-editor 1.36.0-1
-  noto-fonts-cjk 20240730-1
   npm 11.6.0-1
   ollama 0.11.10-2
   openssh 10.0p1-4
@@ -183,9 +182,10 @@
 [aur]
   android-studio 2025.1.1.14-1
   autojump 22.5.3-11
-  google-chrome 140.0.7339.127-1
+  google-chrome 140.0.7339.185-1
   ocrmypdf 16.10.4-1
   pkgtop 2.5.1-2
+  ttf-ms-win11-auto-zh_cn 10.0.26100.1742-4
   visual-studio-code-bin 1.102.1-1
   watchman-bin 2025.05.26.00-1
   yay 12.5.0-1
