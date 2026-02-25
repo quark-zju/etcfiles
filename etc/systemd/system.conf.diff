@@ -1,4 +1,4 @@
---- systemd-257.9-1/etc/systemd/system.conf
+--- systemd-259.1-1/etc/systemd/system.conf
 +++ current/etc/systemd/system.conf
 @@ -1,84 +1,84 @@
  #  This file is part of systemd.
@@ -51,15 +51,16 @@
  #DefaultStandardError=inherit
 -#DefaultTimeoutStartSec=90s
 -#DefaultTimeoutStopSec=90s
+-#DefaultTimeoutAbortSec=
+-#DefaultDeviceTimeoutSec=90s
 +DefaultTimeoutStartSec=10s
 +DefaultTimeoutStopSec=10s
- #DefaultTimeoutAbortSec=
- #DefaultDeviceTimeoutSec=90s
++DefaultTimeoutAbortSec=10s
++DefaultDeviceTimeoutSec=10s
  #DefaultRestartSec=100ms
  #DefaultStartLimitIntervalSec=10s
  #DefaultStartLimitBurst=5
  #DefaultEnvironment=
- #DefaultCPUAccounting=yes
  #DefaultIOAccounting=no
  #DefaultIPAccounting=no
  #DefaultMemoryAccounting=yes
@@ -85,5 +86,6 @@
  #DefaultMemoryPressureWatch=auto
  #DefaultOOMPolicy=stop
  #DefaultSmackProcessLabel=
+ #DefaultRestrictSUIDSGID=
  #ReloadLimitIntervalSec=
  #ReloadLimitBurst=

@@ -1,6 +1,6 @@
---- pacman-7.0.0.r6.gc685ae6-6/etc/makepkg.conf
+--- pacman-7.1.0.r9.g54d9411-1/etc/makepkg.conf
 +++ current/etc/makepkg.conf
-@@ -1,165 +1,165 @@
+@@ -1,168 +1,165 @@
  #!/hint/bash
  # shellcheck disable=2034
  
@@ -41,6 +41,8 @@
  CARCH="x86_64"
  CHOST="x86_64-pc-linux-gnu"
  
+-#NPROC=2
+-
  #-- Compiler and Linker Flags
  #CPPFLAGS=""
  CFLAGS="-march=x86-64 -mtune=generic -O2 -pipe -fno-plt -fexceptions \
@@ -85,7 +87,9 @@
  #   These are default values for the options=() settings
  #########################################################################
  #
- # Makepkg defaults: OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto !autodeps)
+-# Makepkg defaults:
+-# OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto !autodeps)
++# Makepkg defaults: OPTIONS=(!strip docs libtool staticlibs emptydirs !zipman !purge !debug !lto !autodeps)
  #  A negated option will do the opposite of the comments below.
  #
  #-- strip:      Strip symbols from binaries/libraries
@@ -110,9 +114,11 @@
  #-- Options to be used when stripping static libraries. See `man strip' for details.
  STRIP_STATIC="--strip-debug"
  #-- Manual (man and info) directories to compress (if zipman is specified)
- MAN_DIRS=({usr{,/local}{,/share},opt/*}/{man,info})
+-MAN_DIRS=(usr{,/local}{,/share}/{man,info})
++MAN_DIRS=({usr{,/local}{,/share},opt/*}/{man,info})
  #-- Doc directories to remove (if !docs is specified)
- DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc} opt/*/{doc,gtk-doc})
+-DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc})
++DOC_DIRS=(usr/{,local/}{,share/}{doc,gtk-doc} opt/*/{doc,gtk-doc})
  #-- Files to be removed from all packages (if purge is specified)
  PURGE_TARGETS=(usr/{,share}/info/dir .packlist *.pod)
  #-- Directory to store source code in for debug packages

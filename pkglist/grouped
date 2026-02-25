@@ -1,94 +1,113 @@
 [ungrouped]
-  7zip 25.01-1
-  alsa-utils 1.2.14-1
-  amd-ucode 20250808-1
-  android-tools 35.0.2-18
-  arandr 0.1.11-4
-  arch-audit 0.2.0-3
-  base 3-2
+  7zip 26.00-1
+  alsa-utils 1.2.15.2-2
+  amd-ucode 20260221-1
+  android-tools 35.0.2-23
+  arandr 0.1.11-6
+  arch-audit 0.2.0-4
+  base 3-3
   base-devel 1-2
-  bluez-utils 5.83-1
-  cargo-expand 1.0.116-1
-  ccache 4.11.3-2
-  cmake 4.1.1-1
-  ctags 1:6.2.0-1
-  docker 1:28.3.3-1
-  docker-buildx 0.28.0-1
+  bluez-utils 5.86-2
+  cargo-expand 1.0.121-1
+  ccache 4.12.3-2
+  cdrdao 1.2.6-1
+  cmake 4.2.3-1
+  ctags 1:6.2.1-1
+  cups 2:2.4.16-2
+  dfu-util 0.11-3
+  docker 1:29.2.1-1
+  docker-buildx 0.31.1-1
   dosfstools 4.2-5
+  dvd+rw-tools 7.1-12
   efibootmgr 18-3
-  firefox 142.0.1-1
-  flatpak 1:1.16.1-1
-  fwupd 2.0.16-1
-  gdb 16.3-1
-  gimp 3.0.4-4
-  git 2.51.0-1
-  gnumeric 1.12.59-3
+  firefox 147.0.4-1
+  flatpak 1:1.16.3-1
+  freecad 1.0.2-8
+  fuse2 2.9.9-5
+  fwupd 2.0.19-1
+  gdb 17.1-2
+  gimp 3.0.8-2
+  git 2.53.0-1
+  gnumeric 1.12.60-1
+  gperf 3.3-2
+  hplip 1:3.25.8-5
   htop 3.4.1-1
-  ibus-rime 1.5.1-1
-  inetutils 2.6-1
-  inkscape 1.4.2-8
-  ipython 9.5.0-1
-  iwd 3.9-1
-  jack2 1.9.22-1
-  krita 5.2.11-2
-  less 1:679-1
-  lftp 4.9.3-1
-  linux 6.16.7.arch1-1
-  linux-firmware 20250808-1
+  ibus-rime 1.6.0-1
+  imagemagick 7.1.2.15-1
+  inetutils 2.7-2
+  inkscape 1.4.3-4
+  ipython 9.9.0-1
+  iwd 3.11-2
+  jack2 1.9.22-2
+  krita 5.2.15-1
+  less 1:692-1
+  lftp 4.9.3-2
+  libva-utils 2.22.0-1
+  linux 6.18.9.arch1-2
+  linux-firmware 20260221-1
   man-db 2.13.1-1
-  mitmproxy 12.1.1-1
-  mtr 0.95-6
-  mypy 1.17.1-1
-  ncdu 2.8.2-3
-  neovim 0.11.4-1
+  man-pages 6.17-1
+  mitmproxy 12.2.1-2
+  mtr 0.96-1
+  mypy 1.19.1-1
+  ncdu 2.9.2-1
+  neovim 0.11.6-1
   net-tools 2.10-3
   network-manager-applet 1.36.0-1
-  networkmanager 1.54.0-1
+  networkmanager 1.54.3-1
   nm-connection-editor 1.36.0-1
-  npm 11.6.0-1
-  ollama 0.11.10-2
-  openssh 10.0p1-4
+  npm 11.10.1-1
+  ollama 0.17.0-1
+  openscad 2021.01-20
+  openssh 10.2p1-2
   optipng 7.9.1-1
-  pacutils 0.15.0-1
-  pavucontrol 1:6.1-1
+  pacutils 0.15.0-2
+  pavucontrol 1:6.2-1
+  perl-image-exiftool 13.50-1
   powertop 2.15-2
-  pulseaudio 17.0+r43+g3e2bb8a1e-1
-  pulseaudio-alsa 1:1.2.12-4
-  pulseaudio-bluetooth 17.0+r43+g3e2bb8a1e-1
-  pyalpm 0.10.12-1
-  pyright 1.1.405-1
-  python-poetry 2.1.2-1
-  python-virtualenv 20.34.0-1
-  quilt 0.68-1
-  reflector 2023-3
-  rime-double-pinyin 0.0.0.20190120-2
+  pulseaudio 17.0+r98+gb096704c0-1
+  pulseaudio-alsa 1:1.2.12-5
+  pulseaudio-bluetooth 17.0+r98+gb096704c0-1
+  pyalpm 0.11.1-1
+  pyenv 1:2.6.22-1
+  pyright 1.1.407-1
+  python-pip 26.0.1-1
+  python-poetry 2.3.2-1
+  python-scipy 1.17.1-1
+  python-virtualenv 20.39.0-1
+  quilt 0.69-1
+  reflector 2023-5
+  rime-double-pinyin 0.0.0.20250923-1
+  rpi-imager 2.0.6-2
   rsync 3.4.1-2
-  ruby 3.4.5-1
+  ruby 3.4.8-2
   ruby-pry 0.15.2-2
-  rust-analyzer 20250825-1
-  rustup 1.28.2-3
-  scrcpy 3.3.2-1
+  rust-analyzer 20260202-1
+  rustup 1.28.2-4
+  scrcpy 3.3.4-1
   seahorse 1:47.0.1-6
   sshguard 2.5.1-1
-  strace 6.16-1
-  subversion 1.14.5-4
-  sudo 1.9.17.p1-1
+  strace 6.19-1
+  subversion 1.14.5-5
+  sudo 1.9.17.p2-2
+  system-config-printer 1.5.18-6
   tcl 8.6.16-1
   tk 8.6.16-1
-  tuned-ppd 2.26.0-1
-  unrar 1:7.1.10-1
+  tuned-ppd 2.27.0-1
+  unrar 1:7.2.4-1
   unzip 6.0-23
-  usbutils 018-1
-  vim 9.1.1734-1
-  vlc 3.0.21-28
-  vlc-plugin-ffmpeg 3.0.21-28
-  volumeicon 0.5.1-7
-  vulkan-radeon 1:25.2.2-2
-  wget 1.25.0-2
-  wireless_tools 30.pre9-4
+  usbutils 019-1
+  vim 9.2.0038-1
+  vlc 3.0.21-32
+  vlc-plugin-ffmpeg 3.0.21-32
+  volumeicon 0.5.1-8
+  vulkan-radeon 1:25.3.5-1
+  wget 1.25.0-3
+  wireless_tools 30.pre9-5
   xclip 0.13-6
-  yt-dlp 2025.09.05-1
-  zed 0.203.5-1
+  yarn 1.22.22-2
+  yt-dlp 2026.02.21-1
+  zed 0.224.11-1
   zsh 5.9-5
 [xfce4-goodies]
   mousepad 0.6.5-1
@@ -97,7 +116,7 @@
   thunar-archive-plugin 0.6.0-1
   thunar-media-tags-plugin 0.6.0-1
   xfburn 0.8.0-1
-  xfce4-artwork 0.1.1a_git20110420-6
+  xfce4-artwork 0.1.1a_git20110420-7
   xfce4-battery-plugin 1.2.0-1
   xfce4-clipman-plugin 1.7.0-1
   xfce4-cpufreq-plugin 1.3.0-1
@@ -115,9 +134,9 @@
   xfce4-places-plugin 1.9.0-1
   xfce4-pulseaudio-plugin 0.5.1-1
   xfce4-screensaver 4.20.1-1
-  xfce4-screenshooter 1.11.2-1
+  xfce4-screenshooter 1.11.3-3
   xfce4-sensors-plugin 1.5.0-2
-  xfce4-smartbookmark-plugin 0.6.0-1
+  xfce4-smartbookmark-plugin 0.6.0-2
   xfce4-systemload-plugin 1.4.0-1
   xfce4-taskmanager 1.6.0-1
   xfce4-time-out-plugin 1.2.0-1
@@ -125,111 +144,120 @@
   xfce4-verve-plugin 2.1.0-1
   xfce4-wavelan-plugin 0.7.0-2
   xfce4-weather-plugin 0.12.0-2
-  xfce4-whiskermenu-plugin 2.10.0-1
+  xfce4-whiskermenu-plugin 2.10.1-1
   xfce4-xkb-plugin 0.9.0-1
 [kde-applications]
-  ark 25.08.1-1
-  dolphin 25.08.1-1
-  dolphin-plugins 25.08.1-1
-  dragon 25.08.1-1
-  ffmpegthumbs 25.08.1-1
-  filelight 25.08.1-1
-  gwenview 25.08.1-1
-  juk 25.08.1-1
-  kamera 25.08.1-1
-  kate 25.08.1-1
-  kdeconnect 25.08.1-1
-  kmix 25.08.1-1
-  koko 25.08.1-1
-  kolourpaint 25.08.1-1
-  kompare 25.08.1-1
-  konsole 25.08.1-1
-  kwalletmanager 25.08.1-1
-  okular 25.08.1-1
-  yakuake 25.08.1-1
+  ark 25.12.2-1
+  dolphin 25.12.2-1
+  dolphin-plugins 25.12.2-1
+  dragon 25.12.2-1
+  ffmpegthumbs 25.12.2-1
+  filelight 25.12.2-1
+  gwenview 25.12.2-1
+  juk 25.12.2-1
+  k3b 1:25.12.2-1
+  kamera 25.12.2-1
+  kate 25.12.2-1
+  kdeconnect 25.12.2-1
+  kmix 25.12.2-1
+  koko 25.12.2-1
+  kolourpaint 25.12.2-1
+  kompare 25.12.2-1
+  konsole 25.12.2-1
+  kwalletmanager 25.12.2-1
+  okular 25.12.2-1
+  yakuake 25.12.2-1
 [plasma]
-  bluedevil 1:6.4.5-1
-  breeze-gtk 6.4.5-1
-  breeze-plymouth 6.4.5-1
-  discover 6.4.5-1
-  kde-gtk-config 6.4.5-1
-  kdeplasma-addons 6.4.5-1
-  kinfocenter 6.4.5-1
-  kscreen 6.4.5-1
-  kwallet-pam 6.4.5-1
-  kwin-x11 6.4.5-1
-  plasma-browser-integration 6.4.5-1
-  plasma-desktop 6.4.5-1
-  plasma-pa 6.4.5-1
-  plasma-workspace-wallpapers 6.4.5-1
-  spectacle 1:6.4.5-1
+  bluedevil 1:6.6.1-1
+  breeze-gtk 6.6.1-1
+  breeze-plymouth 6.6.1-1
+  discover 6.6.1-1
+  kde-gtk-config 6.6.1-1
+  kdeplasma-addons 6.6.1-1
+  kinfocenter 6.6.1-1
+  kscreen 6.6.1-1
+  kwallet-pam 6.6.1-1
+  kwin-x11 6.6.1-1
+  plasma-browser-integration 6.6.1-1
+  plasma-desktop 6.6.1-1
+  plasma-nm 6.6.1-1
+  plasma-pa 6.6.1-1
+  plasma-workspace-wallpapers 6.6.1-1
+  print-manager 1:6.6.1-1
+  spectacle 1:6.6.1-1
 [xfce4]
   exo 4.20.0-2
   garcon 4.20.0-2
-  thunar 4.20.4-1
+  thunar 4.20.7-1
   thunar-volman 4.20.0-2
-  tumbler 4.20.0-3
+  tumbler 4.20.1-1
   xfce4-appfinder 4.20.0-2
-  xfce4-panel 4.20.5-1
+  xfce4-panel 4.20.6-1
   xfce4-power-manager 4.20.0-3
-  xfce4-session 4.20.3-1
-  xfce4-settings 4.20.2-1
-  xfce4-terminal 1.1.5-1
+  xfce4-session 4.20.3-2
+  xfce4-settings 4.20.3-1
+  xfce4-terminal 1.1.5-2
   xfconf 4.20.0-2
-  xfdesktop 4.20.1-1
+  xfdesktop 4.20.1-3
   xfwm4 4.20.0-2
   xfwm4-themes 4.10.0-6
 [aur]
   android-studio 2025.1.1.14-1
-  autojump 22.5.3-11
-  google-chrome 140.0.7339.185-1
+  antigravity 1.14.2-2
+  arduino-ide-bin 2.3.6-2
+  claude-code-stable 2.1.44-1
+  extundelete 0.2.4-4
+  google-chrome 145.0.7632.116-1
   ocrmypdf 16.10.4-1
   pkgtop 2.5.1-2
   ttf-ms-win11-auto-zh_cn 10.0.26100.1742-4
-  visual-studio-code-bin 1.102.1-1
+  visual-studio-code-bin 1.107.1-1
   watchman-bin 2025.05.26.00-1
-  yay 12.5.0-1
+  yay 12.5.6-1
   zoom 6.5.3-1
 [kde-utilities]
-  ark 25.08.1-1
-  filelight 25.08.1-1
-  kate 25.08.1-1
-  konsole 25.08.1-1
-  kwalletmanager 25.08.1-1
-  yakuake 25.08.1-1
+  ark 25.12.2-1
+  filelight 25.12.2-1
+  kate 25.12.2-1
+  konsole 25.12.2-1
+  kwalletmanager 25.12.2-1
+  yakuake 25.12.2-1
 [kde-graphics]
-  gwenview 25.08.1-1
-  kamera 25.08.1-1
-  koko 25.08.1-1
-  kolourpaint 25.08.1-1
-  okular 25.08.1-1
+  gwenview 25.12.2-1
+  kamera 25.12.2-1
+  koko 25.12.2-1
+  kolourpaint 25.12.2-1
+  okular 25.12.2-1
 [kde-multimedia]
-  dragon 25.08.1-1
-  ffmpegthumbs 25.08.1-1
-  juk 25.08.1-1
-  kmix 25.08.1-1
+  dragon 25.12.2-1
+  ffmpegthumbs 25.12.2-1
+  juk 25.12.2-1
+  k3b 1:25.12.2-1
+  kmix 25.12.2-1
 [gnome]
   gnome-keyring 1:48.0-1
-  gvfs-smb 1.57.2-4
+  gvfs-smb 1.58.1-1
 [kde-sdk]
-  dolphin-plugins 25.08.1-1
-  kompare 25.08.1-1
+  dolphin-plugins 25.12.2-1
+  kompare 25.12.2-1
 [linux-tools]
-  turbostat 6.16-1
-  x86_energy_perf_policy 6.16-1
+  turbostat 6.19.3-1
+  x86_energy_perf_policy 6.19.3-1
 [xorg]
-  xorg-server 21.1.18-2
+  xorg-server 21.1.21-1
   xorg-xwininfo 1.1.6-2
+[arduino]
+  arduino-cli 1.4.1-1
 [fprint]
   fprintd 1.94.5-1
 [kde-network]
-  kdeconnect 25.08.1-1
+  kdeconnect 25.12.2-1
 [kde-system]
-  dolphin 25.08.1-1
+  dolphin 25.12.2-1
 [nerd-fonts]
-  ttf-jetbrains-mono-nerd 3.4.0-1
+  ttf-jetbrains-mono-nerd 3.4.0-2
 [pyqt6]
-  python-pyqt6 6.9.1-2
+  python-pyqt6 6.10.2-3
 [xorg-apps]
   xorg-xwininfo 1.1.6-2
 [xorg-drivers]

@@ -17,11 +17,11 @@ adm:x:999:daemon
 wheel:x:998:quark
 utmp:x:997:
 audio:x:996:quark
-disk:x:995:
+disk:x:995:quark
 input:x:994:quark
 kmem:x:993:
 kvm:x:992:quark
-lp:x:991:
+lp:x:991:cups
 optical:x:990:
 render:x:989:
 sgx:x:988:
@@ -61,3 +61,7 @@ passim:x:964:
 docker:x:963:quark
 adbusers:x:962:
 flatpak:x:961:
+clock:x:960:
+pcscd:x:959:
+cups:x:209:
+empower:x:958:
