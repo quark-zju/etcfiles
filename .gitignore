@@ -2,6 +2,7 @@
 *.OLD
 *.cache
 *.gpg
+*.pacnew
 *~
 __pycache__/
 
@@ -22,6 +23,7 @@ __pycache__/
 /etc/os-release
 /etc/pacman.d/gnupg/
 /etc/pacman.d/mirrorlist
+/etc/printcap
 /etc/resolv.conf
 /etc/shadow
 /etc/shells
