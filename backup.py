@@ -264,7 +264,7 @@ def group_packages(
         # skip this (small, duplicated) group if all pkgs are mentioned elsewhere
         if all(p.name in visited for p in pkgs):
             continue
-        visited.update(pkgs)
+        visited.update(p.name for p in pkgs)
         yield group, pkgs
 
 
