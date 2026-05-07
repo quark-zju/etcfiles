@@ -184,7 +184,9 @@ def get_file_content_from_package(
     for cache_dir in cache_dirs:
         tar_path = os.path.join(cache_dir, pkg_filename)
         if os.path.isfile(tar_path):
-            return extract_tarball_single_path(tar_path, path)
+            content = extract_tarball_single_path(tar_path, path)
+            if content is not None:
+                return content
     missing_pkgs.add(local_pkg.name)
     raise RuntimeError(
         f" Package {pkg_filename} is not found in {', or '.join(cache_dirs)}."
