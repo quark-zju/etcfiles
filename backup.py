@@ -176,24 +176,27 @@ def copy_path_to_local(path: str, message: str = ""):
         print(f" Failed: {ex}")
 
 
-def get_file_content_from_package(local_pkg: pyalpm.Package, path: str) -> bytes:
+def get_file_content_from_package(
+    local_pkg: pyalpm.Package, path: str, missing_pkgs: set[str]
+) -> bytes:
     pkg_filename = f"{local_pkg.name}-{local_pkg.version}-{local_pkg.arch}.pkg.tar.zst"
     cache_dirs = get_handle().cachedirs
     for cache_dir in cache_dirs:
         tar_path = os.path.join(cache_dir, pkg_filename)
         if os.path.isfile(tar_path):
             return extract_tarball_single_path(tar_path, path)
+    missing_pkgs.add(local_pkg.name)
     raise RuntimeError(
         f" Package {pkg_filename} is not found in {', or '.join(cache_dirs)}."
     )
 
 
-def maybe_write_diff(local_pkg: pyalpm.Package, path: str):
+def maybe_write_diff(local_pkg: pyalpm.Package, path: str, missing_pkgs: set[str]):
     assert os.path.isabs(path)
     with open(path, "rb") as f:
         current_content = f.read()
     try:
-        past_content = get_file_content_from_package(local_pkg, path)
+        past_content = get_file_content_from_package(local_pkg, path, missing_pkgs)
     except RuntimeError as ex:
         print(
             f" Cannot read original {path} from package {local_pkg.name}. Skip generating diff."
@@ -224,13 +227,19 @@ def maybe_write_diff(local_pkg: pyalpm.Package, path: str):
 def backup_etc():
     os.chdir(os.path.dirname(__file__))
     shutil.rmtree("./etc", ignore_errors=True)
+    missing_pkgs = set()
     for path, status, pkg in with_status(walk_etc()):
         match status:
             case Status.NOT_OWNED:
                 copy_path_to_local(path, "untracked")
             case Status.BACKUP_CHANGED:
                 copy_path_to_local(path, "modified ")
-                maybe_write_diff(pkg, path)
+                maybe_write_diff(pkg, path, missing_pkgs)
+    if missing_pkgs:
+        print(
+            "To download missing packages, run:\n\n"
+            f"    sudo pacman -Sw {' '.join(sorted(missing_pkgs))}\n"
+        )
 
 
 def group_packages(
