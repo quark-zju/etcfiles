@@ -233,31 +233,9 @@
   watchman-bin 2025.05.26.00-1
   yay 12.5.6-1
   zoom 6.5.3-1
-[kde-utilities]
-  ark 26.04.0-1
-  filelight 26.04.0-1
-  kate 26.04.0-1
-  konsole 26.04.0-1
-  kwalletmanager 26.04.0-1
-  yakuake 26.04.0-1
-[kde-graphics]
-  gwenview 26.04.0-1
-  kamera 26.04.0-1
-  koko 26.04.0-1
-  kolourpaint 26.04.0-1
-  okular 26.04.0-1
-[kde-multimedia]
-  dragon 26.04.0-1
-  ffmpegthumbs 26.04.0-1
-  juk 26.04.0-1
-  k3b 1:26.04.0-1
-  kmix 26.04.0-1
 [gnome]
   gnome-keyring 1:50.0-1
   gvfs-smb 1.60.0-2
-[kde-sdk]
-  dolphin-plugins 26.04.0-1
-  kompare 26.04.0-1
 [linux-tools]
   turbostat 7.0.3-1
   x86_energy_perf_policy 7.0.3-1
@@ -268,15 +246,9 @@
   arduino-cli 1.4.1-1
 [fprint]
   fprintd 1.94.5-2
-[kde-network]
-  kdeconnect 26.04.0-1
-[kde-system]
-  dolphin 26.04.0-1
 [nerd-fonts]
   ttf-jetbrains-mono-nerd 3.4.0-2
 [pyqt6]
   python-pyqt6 6.11.0-1
-[xorg-apps]
-  xorg-xwininfo 1.1.6-2
 [xorg-drivers]
   xf86-video-amdgpu 25.0.0-1
