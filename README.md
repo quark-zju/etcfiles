@@ -4,6 +4,10 @@ Similar to `dotfiles`, but for `/etc`. Currently designed for Arch Linux.
 
 Also tracks the package list.
 
+Also provides `merge-pacnew.py` to do 3-way merge of `.pacnew` changes.
+
+To use this repo, fork or copy the Python scripts, run `./backup.py` on your Arch system, then commit. Repeat periodically. Run `merge-pacnew.py` as needed.
+
 ## `backup.py`
 
 Backup the system state. Equivalent to `backup.py --etc --pkglist`.
@@ -30,6 +34,14 @@ Backup the list of manually installed packages to `pkglist`.
 - `pkglist/installed`: Explicitly installed packages. Similar to `pacman -Qe` output.
 - `pkglist/minimal`: `installed` excluding packages required by other installed packages.
 - `pkglist/grouped`: Organize packages by groups. Packages without a group will be assigned to either `[aur]`, or `[ungrouped]`.
+
+## `merge-pacnew.py`
+
+Perform 3-way merge (base: old stock config; local: modified config; other: new stock config) to handle config updates.
+
+This script checks the in-repo `.diff` file history to get the accurate version of "old stock config". So it is technically more capable than tools that can only guess what the "old" version is.
+
+Dry-run by default. Does not actually require `.pacnew` files to be on disk (file content is read from cached pkgs).
 
 ## Background
 
