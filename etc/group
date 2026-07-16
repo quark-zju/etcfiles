@@ -65,3 +65,5 @@ clock:x:960:
 pcscd:x:959:
 cups:x:209:
 empower:x:958:
+named:x:40:
+systemd-imds:x:957:

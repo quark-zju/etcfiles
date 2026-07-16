@@ -1,6 +1,6 @@
 --- filesystem-2025.10.12-1/etc/passwd
 +++ current/etc/passwd
-@@ -1 +1,31 @@
+@@ -1 +1,33 @@
  root:x:0:0::/root:/usr/bin/bash
 +bin:x:1:1::/:/usr/bin/nologin
 +daemon:x:2:2::/:/usr/bin/nologin
@@ -32,3 +32,5 @@
 +flatpak:x:961:961:Flatpak system helper:/:/usr/bin/nologin
 +pcscd:x:959:959:PC/SC Smart Card Daemon:/:/usr/bin/nologin
 +cups:x:209:209:cups helper user:/:/usr/bin/nologin
++named:x:40:40:BIND DNS Server:/:/usr/bin/nologin
++systemd-imds:x:957:957:systemd Instance Metadata:/:/usr/bin/nologin

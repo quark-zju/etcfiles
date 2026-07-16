@@ -1,6 +1,6 @@
 --- filesystem-2025.10.12-1/etc/group
 +++ current/etc/group
-@@ -1 +1,67 @@
+@@ -1 +1,69 @@
  root:x:0:root
 +sys:x:3:bin
 +mem:x:8:
@@ -68,3 +68,5 @@
 +pcscd:x:959:
 +cups:x:209:
 +empower:x:958:
++named:x:40:
++systemd-imds:x:957:

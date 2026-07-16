@@ -1,4 +1,4 @@
---- pacman-7.1.0.r9.g54d9411-1/etc/makepkg.conf
+--- pacman-7.1.0.r9.g54d9411-2/etc/makepkg.conf
 +++ current/etc/makepkg.conf
 @@ -1,168 +1,165 @@
  #!/hint/bash

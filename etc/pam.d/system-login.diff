@@ -1,4 +1,4 @@
---- pambase-20250719-1/etc/pam.d/system-login
+--- pambase-20260616-1/etc/pam.d/system-login
 +++ current/etc/pam.d/system-login
 @@ -1,21 +1,22 @@
  #%PAM-1.0

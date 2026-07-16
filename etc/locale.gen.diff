@@ -1,4 +1,4 @@
---- glibc-2.43+r22+g8362e8ce10b2-2/etc/locale.gen
+--- glibc-2.43+r37+gfdf10644d6ee-1/etc/locale.gen
 +++ current/etc/locale.gen
 @@ -1,517 +1,516 @@
  # Configuration file for locale-gen
