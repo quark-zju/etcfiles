@@ -2,6 +2,7 @@ import contextlib
 import difflib
 import importlib.util
 import io
+import subprocess
 import tempfile
 import unittest
 from pathlib import Path
@@ -81,6 +82,31 @@ class MergePacnewTest(unittest.TestCase):
             self.assertEqual(paths["system"].read_bytes(), paths["merged"])
             self.assertFalse(paths["pacnew"].exists())
 
+    def test_real_run_does_not_require_pacnew(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            repo_etc, system_etc, paths = self.make_files(Path(temp_dir))
+            paths["pacnew"].unlink()
+
+            changed = merge_pacnew.process_diff(
+                paths["diff"], repo_etc, system_etc, dry_run=False
+            )
+
+            self.assertTrue(changed)
+            self.assertEqual(paths["system"].read_bytes(), paths["merged"])
+
+    def test_mismatched_pacnew_is_skipped(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            repo_etc, system_etc, paths = self.make_files(Path(temp_dir))
+            paths["pacnew"].write_bytes(b"unexpected package contents\n")
+
+            changed = merge_pacnew.process_diff(
+                paths["diff"], repo_etc, system_etc, dry_run=False
+            )
+
+            self.assertFalse(changed)
+            self.assertEqual(paths["system"].read_bytes(), paths["modified"])
+            self.assertTrue(paths["pacnew"].exists())
+
     def test_changed_system_file_is_skipped(self):
         with tempfile.TemporaryDirectory() as temp_dir:
             repo_etc, system_etc, paths = self.make_files(Path(temp_dir))
@@ -103,7 +129,7 @@ class MergePacnewTest(unittest.TestCase):
 
         original = b"setting=old\n# unchanged\nupstream=old\n"
         modified = b"setting=local\n# unchanged\nupstream=old\n"
-        pacnew = b"setting=old\n# unchanged\nupstream=new\n"
+        package_current = b"setting=old\n# unchanged\nupstream=new\n"
         merged = b"setting=local\n# unchanged\nupstream=new\n"
         tracked_path = repo_etc / "example.conf"
         diff_path = repo_etc / "example.conf.diff"
@@ -111,8 +137,25 @@ class MergePacnewTest(unittest.TestCase):
         pacnew_path = system_etc / "example.conf.pacnew"
         tracked_path.write_bytes(modified)
         diff_path.write_bytes(make_diff(original, modified))
+        subprocess.run(["git", "init", "-q"], cwd=repo_etc.parent, check=True)
+        subprocess.run(["git", "add", "etc"], cwd=repo_etc.parent, check=True)
+        subprocess.run(
+            [
+                "git",
+                "-c",
+                "user.name=Test",
+                "-c",
+                "user.email=test@example.com",
+                "commit",
+                "-qm",
+                "track local configuration",
+            ],
+            cwd=repo_etc.parent,
+            check=True,
+        )
+        diff_path.write_bytes(make_diff(package_current, modified))
         system_path.write_bytes(modified)
-        pacnew_path.write_bytes(pacnew)
+        pacnew_path.write_bytes(package_current)
         return (
             repo_etc,
             system_etc,
